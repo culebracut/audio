@@ -1,0 +1,30 @@
+austin: This is the First Act of Hamlet by William Shakespeare...
+jesse:  Who’s there?... 
+nikita: No, answer me! Stand and unfold yourself!
+jesse:  Long live the King!
+nikita: Barnardo??
+jesse:  He. 
+nikita: You come most carefully upon your hour.
+jesse: ’Tis now struck twelve. Get thee to bed, Francisco.
+nikita: For this relief much thanks. ’Tis bitter cold,And I am sick at heart.
+jesse:  Have you had quiet guard?
+nikita:  Not a mouse stirring.
+jesse:  Well, good night.  If you do meet Horatio and Marcellus,the rivals of my watch, bid them make haste.
+nikita: I think I hear them.—Stand ho! Who is there?
+duke:  Friends to this ground.
+austin:  And liegemen to the Dane.
+nikita:  Give you good night.
+austin: Oh farewell, honest soldier. Who hath relieved you?
+nikita: Barnardo hath my place. Give you good night.
+austin:  Holla, Barnardo.
+jesse:  Say, what, is Horatio there?
+duke:  A piece of him.
+jesse: Welcome, Horatio. Welcome, good Marcellus.
+duke: What, has this thing appeared again tonight?
+jesse:  I have seen nothing.
+austin: Horatio says ’tis but our fantasy and will not let belief take hold of him. Touching this dreaded sight twice seen of us. Therefore I have entreated him along With us to watch the minutes of this night,
+austin: That, if again this apparition come, He may approve our eyes and speak to it. 
+duke: Tush, tush, ’twill not appear.
+jesse:  Sit down awhile, And let us once again assail your ears, That are so fortified against our story, What we have two nights seen. 
+duke:  Well, sit we down, And let us hear Barnardo speak of this.
+jesse:  Last night of all, When yond same star that’s westward from the pole Had made his course t’ illume that part of heaven Where now it burns, Marcellus and myself, The bell then beating one—

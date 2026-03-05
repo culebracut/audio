@@ -1,0 +1,10 @@
+data/cache/
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+#
+.venv/
+data/audio/output
+src/temp.py
+.cache/

@@ -1,0 +1,37 @@
+# ═══════════════════════════════════════════════════════════════════
+#  Qwen3 Voice Assistant – Python dependencies
+# ═══════════════════════════════════════════════════════════════════
+#
+#  Install all at once:
+#      pip install -r requirements.txt
+#
+#  Optional GPU speed-ups (requires CUDA + compatible compiler):
+#      pip install flash-attn --no-build-isolation
+#
+# ───────────────────────────────────────────────────────────────────
+
+# Core ML framework (GPU recommended)
+torch>=2.6.0
+transformers>=4.51.0   # Qwen3 requires ≥ 4.51.0
+
+# Qwen3-ASR  (install from PyPI or from source)
+qwen-asr               # pip install qwen-asr
+# Alternative (source):
+#   git clone https://github.com/QwenLM/Qwen3-ASR && cd Qwen3-ASR && pip install -e .
+
+# Qwen3-TTS  (install from PyPI or from source)
+qwen-tts               # pip install qwen-tts
+# Alternative (source):
+#   git clone https://github.com/QwenLM/Qwen3-TTS && cd Qwen3-TTS && pip install -e .
+
+# Audio I/O
+sounddevice>=0.4.6     # microphone recording & playback
+soundfile>=0.12.1      # WAV read/write
+numpy>=1.24.0
+
+# Optional: audio resampling (only needed when --input file has a
+# different sample rate than 16 kHz)
+resampy>=0.4.2
+
+# Accelerate makes multi-GPU / CPU offload easier
+accelerate>=0.30.0

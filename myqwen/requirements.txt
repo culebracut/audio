@@ -1,0 +1,25 @@
+# Core Model Stack
+#flash-attn>=2.5.8  # Add this for high-speed inference
+torch --index-url https://download.pytorch.org
+torchaudio --index-url https://download.pytorch.org
+# Pinned to avoid missing 'check_model_inputs' in v5.x
+transformers>=4.48.0,<5.0.0
+accelerate>=1.1.0
+sentencepiece
+einops
+qwen-tts
+
+# Audio & Signal Processing
+sounddevice
+soundfile
+librosa
+sox
+pydub
+openai-whisper
+
+# Web & API (FastAPI / Gradio)
+fastapi
+uvicorn
+gradio
+python-multipart
+pydantic>=2.0

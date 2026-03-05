@@ -1,0 +1,30 @@
+marcellus: This is the First Act of Hamlet by William Shakespeare...
+barnardo:  Who’s there?... 
+francisco: No, answer me! Stand and unfold yourself!
+barnardo:  Long live the King!
+francisco: Barnardo??
+barnardo:  He. 
+francisco: You come most carefully upon your hour.
+barnardo: ’Tis now struck twelve. Get thee to bed, Francisco.
+francisco: For this relief much thanks. ’Tis bitter cold,And I am sick at heart.
+barnardo:  Have you had quiet guard?
+francisco:  Not a mouse stirring.
+barnardo:  Well, good night.  If you do meet Horatio and Marcellus,the rivals of my watch, bid them make haste.
+francisco: I think I hear them.—Stand ho! Who is there?
+horatio:  Friends to this ground.
+marcellus:  And liegemen to the Dane.
+francisco:  Give you good night.
+marcellus: Oh farewell, honest soldier. Who hath relieved you?
+francisco: Barnardo hath my place. Give you good night.
+marcellus:  Holla, Barnardo.
+barnardo:  Say, what, is Horatio there?
+horatio:  A piece of him.
+barnardo: Welcome, Horatio. Welcome, good Marcellus.
+horatio: What, has this thing appeared again tonight?
+barnardo:  I have seen nothing.
+marcellus: Horatio says ’tis but our fantasy and will not let belief take hold of him. Touching this dreaded sight twice seen of us. Therefore I have entreated him along With us to watch the minutes of this night,
+marcellus: That, if again this apparition come, He may approve our eyes and speak to it. 
+horatio: Tush, tush, ’twill not appear.
+barnardo:  Sit down awhile, And let us once again assail your ears, That are so fortified against our story, What we have two nights seen. 
+horatio:  Well, sit we down, And let us hear Barnardo speak of this.
+barnardo:  Last night of all, When yond same star that’s westward from the pole Had made his course t’ illume that part of heaven Where now it burns, Marcellus and myself, The bell then beating one—
