@@ -7,7 +7,7 @@ from parse_script import parse_script
 import sounddevice as sd
 
 
-# 1. Load your config and your script.
+# 1. Load your config and your script!
 metadata = ConfigLoader("data/configurations/config_socially.json")
 
 # Initialization 
