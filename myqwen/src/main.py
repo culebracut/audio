@@ -1,19 +1,19 @@
 
 from model_core import QwenModelContainer
-from config_manager import ConfigLoader
+from config_manager import ConfigManager
 from cache_manager import CacheManager
-from voice_service import VoiceGenerationService
+from voice_manager import VoiceGenerationManager
 from parse_script import parse_script
 
 # 1. Load your config and your script
 
-metadata = ConfigLoader()
+metadata = ConfigManager()
+personas = metadata.foo.personas
 
 # Initialization 
-core = QwenModelContainer(metadata.model_path)
-personas = CacheManager(core, cache_dir=metadata.cache_path)
-service = VoiceGenerationService(core, metadata, personas)
-allpersonas = metadata.foo.personas
+model_core = QwenModelContainer(metadata.model_path)
+persona_cache = CacheManager(model_core, cache_dir=metadata.cache_path)
+voice_service = VoiceGenerationManager(model_core, persona_cache)
 
 # 2. Iterate through the lines in the script as name/value pairs
 script = parse_script(metadata.script_path)
@@ -22,16 +22,14 @@ for line in script:
     speaker_id = line["speaker"]
 
     #Lookup the Persona metadata
-    #persona = metadata.get_persona(speaker_id)
-    persona = allpersonas.get(speaker_id)
+    persona = personas.get(speaker_id)
 
     if persona:
         # # Insert the dialogue into the persona
         persona["text"] = line["text"]
 
         # generate_audio(task)
-        # tts_engine.generate(task)
-        result = service.clone_voice(persona)
+        result = voice_service.clone_voice(persona)
 
         print(f"\nActor: {speaker_id}")
         print(f"Dialog: {persona["text"]}.")

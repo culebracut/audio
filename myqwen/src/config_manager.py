@@ -5,7 +5,7 @@ import copy
 from utilities.streaming_audio_writer import StreamingAudioWriter
 from persona_manager import PersonaManager
 
-class ConfigLoader:
+class ConfigManager:
     def __init__(self):
 
         DATA_DIR = Path(__file__).resolve().parent.parent.parent/"data/"
