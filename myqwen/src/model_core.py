@@ -57,7 +57,6 @@ class QwenModelContainer:
     def generate(self, persona):
         self.apply_seed(persona["seed"])
 
-
         self.model.model.config.pad_token_id = 2150
         wav, sr = self.model.generate_voice_clone(
             language=persona["language"], 

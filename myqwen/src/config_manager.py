@@ -1,10 +1,16 @@
 import json
 import os
+from pathlib import Path
 import copy
 from utilities.streaming_audio_writer import StreamingAudioWriter
+from persona_manager import PersonaManager
 
 class ConfigLoader:
-    def __init__(self, config_path):
+    def __init__(self):
+
+        DATA_DIR = Path(__file__).resolve().parent.parent.parent/"data/"
+        config_path = DATA_DIR/"configurations/config_hamlet.json"
+
         if not os.path.exists(config_path):
             raise FileNotFoundError(f"Config file {config_path} not found.")
         
@@ -15,19 +21,23 @@ class ConfigLoader:
         metadata = json_data.get("project_metadata", {})
 
         # save
-        self.script_path = metadata.get("script_path", "")
-        self.model_path = metadata.get("model_path")
-        self.cache_path = metadata.get("cache_path")
-        self.output_path = metadata.get("output_path", "")
         self.default_seed = metadata.get("seed", 42)
         self.default_temp = metadata.get("temp", 0.7)
         self.default_streaming_rate = metadata.get("default_streaming_rate", 24000)
+        self.script_path = DATA_DIR/metadata.get("script_path", "")
+        self.cache_path = DATA_DIR/metadata.get("cache_path")
+        self.output_path = DATA_DIR/metadata.get("output_path", "")
+        self.model_path = metadata.get("model_path")
         
         # 1. Load Quotes for lookup
         self.quotes = json_data.get('quotes', [])
         
+        self.foo = PersonaManager(DATA_DIR)
+        print(self.foo.personas['barnardo']['ref_audio']) 
+        # Output: /home/system/workspace/qwen/data/audio/input/hindu/hindu_man.wav
+
         # 2. Load Personas into a dictionary keyed by 'id'
-        self.personas = {p['id']: p for p in json_data.get('personas', [])}
+        #self.personas = {p['id']: p for p in json_data.get('personas', [])}
 
         # create a new WAV file for dialogue output
         file_path = self.output_path
@@ -35,7 +45,7 @@ class ConfigLoader:
         writer = StreamingAudioWriter(file_path, sr=24000) 
         self.writer = writer
 
-    def get_persona(self, persona_id):
+"""     def get_persona(self, persona_id):
         raw_persona = self.personas.get(persona_id)
         if not raw_persona:
             return None
@@ -54,7 +64,7 @@ class ConfigLoader:
         if matching_quote:
             persona["text"] = matching_quote
 
-        return persona
+        return persona """
 
-    def get_all_persona_ids(self):
-        return list(self.personas.keys())
+"""     def get_all_persona_ids(self):
+        return list(self.personas.keys()) """

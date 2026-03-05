@@ -1,4 +1,5 @@
 import soundfile as sf
+import sounddevice as sd
 import os
 
 class StreamingAudioWriter:
@@ -16,6 +17,7 @@ class StreamingAudioWriter:
         """Appends a new chunk of audio to the open file."""
         if audio_data is not None and len(audio_data) > 0:
             self.file.write(audio_data)
+            sd.play(audio_data, samplerate=24000) 
 
     def close(self):
         """Closes the file handle properly."""

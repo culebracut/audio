@@ -1,19 +1,19 @@
-import os
+
 from model_core import QwenModelContainer
 from config_manager import ConfigLoader
-from persona_manager import PromptManager
+from cache_manager import CacheManager
 from voice_service import VoiceGenerationService
 from parse_script import parse_script
-import sounddevice as sd
 
+# 1. Load your config and your script
 
-# 1. Load your config and your script!
-metadata = ConfigLoader("data/configurations/config_socially.json")
+metadata = ConfigLoader()
 
 # Initialization 
 core = QwenModelContainer(metadata.model_path)
-personas = PromptManager(core, cache_dir=metadata.cache_path)
+personas = CacheManager(core, cache_dir=metadata.cache_path)
 service = VoiceGenerationService(core, metadata, personas)
+allpersonas = metadata.foo.personas
 
 # 2. Iterate through the lines in the script as name/value pairs
 script = parse_script(metadata.script_path)
@@ -22,7 +22,8 @@ for line in script:
     speaker_id = line["speaker"]
 
     #Lookup the Persona metadata
-    persona = metadata.get_persona(speaker_id)
+    #persona = metadata.get_persona(speaker_id)
+    persona = allpersonas.get(speaker_id)
 
     if persona:
         # # Insert the dialogue into the persona
@@ -37,7 +38,6 @@ for line in script:
 
         # append audio to output file
         metadata.writer.write_chunk(result["wav"])
-        sd.play(result["wav"], samplerate=24000) 
     else:
         print(f"✅Skipping {speaker_id}: No persona found in config.")
     
