@@ -9,7 +9,7 @@ from transformers import GenerationConfig
 from qwen_tts.inference.qwen3_tts_model import VoiceClonePromptItem
 torch.serialization.add_safe_globals([VoiceClonePromptItem])
 
-class QwenModelContainer:
+class ModelManager:
     def __init__(self, model_path):
         self.device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
@@ -27,6 +27,7 @@ class QwenModelContainer:
 
         # TODO: Set it in all possible locations
         self.tokenizer.pad_token = self.tokenizer.eos_token
+        self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
         self.model.model.config.pad_token_id = self.tokenizer.eos_token_id
         self.model.model.generation_config.pad_token_id = self.tokenizer.eos_token_id
 
@@ -68,19 +69,7 @@ class QwenModelContainer:
             #pad_token_id=self.tokenizer.eos_token_id, # Fixes the warning
             pad_token_id=2150
         )
-
-        # with torch.no_grad():
-        #     wav, sr = self.model.generate_voice_clone(
-        #         text=persona["text"],
-        #         language=persona["language"],
-        #         ref_audio=persona["ref_audio"],
-        #         ref_text=persona["ref_text"],
-        #         x_vector_only_mode="False",
-        #         voice_clone_prompt=persona["prompt"],
-        #         non_streaming_mode="False",
-        #         temperature=persona["temp"]
-        #     )
-            
+           
         # Convert to Numpy and fix shape for Soundfile
         if torch.is_tensor(wav):
             wav = wav.cpu().float().numpy()
