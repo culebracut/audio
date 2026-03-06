@@ -30,7 +30,7 @@
       },
       {
       "id":"marcellus",
-      "description":"duke",
+      "description":"marcellus",
       "seed": 100,
       "temp": 0.9,
       "language": "English",
@@ -79,18 +79,62 @@
       ],
       "ref_audio": "audio/input/china/female-chinese-mandarin.wav",
       "ref_text": "几天在浴室书写时，面对着镜子，突然发现左上角的头发闪过一丝荧光。是窗外照进来的阳光反射吗？我用梳子拨了拨，荧光还停在同一个地方，凑近镜子一看，原来是一根白头发。我用手翻翻头发，想看看是不是还有其他的白发，或是半白半黑的头发。我现在像是在干草堆里找银针似的拨弄着发丝，没有，它是唯一的一根。这是头一回发现自己长了根白发，我好奇地用手挑起它，透过镜子仔细观察。这根头发看起来有点像是龙口粉丝般浅白透明。"
+      },
+      {
+      "id":"nikita",
+      "description":"russian",     
+      "language": "English",
+      "seed": 100,
+      "temp": 0.9,
+      "instruct":[
+        "Youthful.",
+        "Excited.",
+        "A slight cultural inflection with clear authority."
+      ],
+      "ref_audio":"audio/input/socially_inept/nikita2.wav",
+      "ref_text": "do right now is without speaking to each other at all, we need you to self-organize."
+      },
+      {
+      "id":"jesse",
+      "language": "English",
+      "description":"youthful male",
+      "seed": 100,
+      "temp": 0.9,
+      "instruct": [
+        "Medium talking speed",
+        "Smooth.",
+        "Informative."
+      ],
+      "ref_audio": "audio/input/socially_inept/jesse2.wav",
+      "ref_text": " I'm going to have to disagree with some of the points my fellow whale has made. I think a toddler could do it in a lazy Sunday afternoon. A large task, a difficult task, an arduous task, is dreaming up all the fun colors, shapes, and clothes and kind of hairstyles and designs. A princess may take on. Don't think you have an army of toddlers at the ready. If you need an army of toddlers, if you acquire an army of toddlers, a slew of toddlers? Mm-hmm. I think this idea may be able to come to fruition, but as it stands, I see no toddlers. I see no factory of toddlers. I'm going to have to say I'm out."
+      },
+      {
+      "id":"austin",
+      "language": "English",
+      "description":"youthful male",
+      "seed": 100,
+      "temp": 0.9,
+      "instruct": [
+        "Youthful.",
+        "Excited.",
+        "A slight cultural inflection with clear authority."
+      ],
+      "ref_audio": "audio/input/socially_inept/austin.wav",
+      "ref_text": "You can take my ears, but you cannot take my liberty. They want to cut off my ears like the Taliban, but what they don't know is my ears can grow back. Like SpongeBob through budding, by the way. Hit me with your best shot, why don't you? Because if that's the best you got, you're a loser. You're such a loser, you missed so bigly, by the way. You had a big opportunity, you could have made my head blow up on TV, but you didn't do that, did you?"
+      },
+      {
+      "id":"duke",
+      "description":"duke",
+      "seed": 100,
+      "temp": 0.9,
+      "language": "English",
+      "instruct":[
+        "A deep, gravelly, rhythmic Western drawl.",
+        "Slow, punctuated delivery.",
+        "A weary, authoritative grit."
+      ],
+      "ref_audio": "audio/input/JohnWayne/JW.wav",
+      "ref_text": "This that the White Man calls charity is a fine thing for widows and orphans, but no warrior can accept it, for if he does, he is no longer a man and when he is no longer a man, he is nothing and better off dead."
       }
-    ],
-    "quotes": [
-    {
-      "id": "gettysburg_address",
-      "text": "Four score and seven years ago our fathers brought forth on this continent a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal. “Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war.",
-      "apply_to_personas": ["hindu_woman", "hindu_man", "duke_gettysburg", "mandarin_woman"]
-    },
-    {
-      "id": "john_wayne_quip",
-      "text": "LISTEN...... pilgrim. I said...... don't *ever*...... touch that saddle again.  I think...You'd better...WATER my horse.",
-      "apply_to_personas": ["hindu_woman", "hindu_man", "duke_gettysburg", "marcellus"]
-    }
-  ]
+    ]
 }
