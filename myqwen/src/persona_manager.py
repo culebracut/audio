@@ -13,9 +13,8 @@ class PersonaManager:
 
         # 3. Standard Dictionary Comprehension with Path Resolution
         self.personas = {
-            p['id']: {
+            p['id'].lower(): {
                 **p,
-                # Resolve relative to DATA_DIR and convert to string
                 "ref_audio": str(data_root / p["ref_audio"].lstrip("/"))
             }
             for p in json_data.get('personas', [])

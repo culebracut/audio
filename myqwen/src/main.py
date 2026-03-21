@@ -78,7 +78,7 @@ class ScriptRunner:
         script =script_manager.get_script()
 
         for line in script:
-            speaker_id = line["speaker"]
+            speaker_id = line["speaker"].lower()
             persona    = self.personas.get(speaker_id)
 
             if persona:
