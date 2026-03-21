@@ -17,11 +17,9 @@ class Config:
     DATA_DIR = Path(__file__).resolve().parent.parent.parent/"data/"
 
     DATA_PATH: str       =  DATA_DIR
-    PERSONA_PATH: str     = DATA_DIR/"personas/personas.json"
-    SCRIPT_PATH: str      = DATA_DIR/"scripts/hamlet.txt"
-    #SCRIPT_PATH: str      =  DATA_DIR/"scripts/inept_philadelphia.txt"
-    OUTPUT_PATH: str      = DATA_DIR/"audio/output/hamlet.wav"
-    #OUTPUT_PATH: str      = DATA_DIR/"audio/output/socially_philadelphia.wav"
+    PERSONA_PATH: str     = DATA_DIR/"personas/moby_dick.json"
+    SCRIPT_PATH: str      = DATA_DIR/"scripts/moby_dick.txt"
+    OUTPUT_PATH: str      = DATA_DIR/"audio/output/moby_dick.wav"
     CACHE_PATH: str       = DATA_DIR/"cache"
     MODEL_PATH: str       = "Qwen/Qwen3-TTS-12Hz-1.7B-Base"
     STREAMING_RATE: int   = 24000

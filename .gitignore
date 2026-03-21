@@ -1,5 +1,6 @@
 .venv/
 .vscode/
+data/cache
 __pycache__/
 *.wav
 *.mp3
