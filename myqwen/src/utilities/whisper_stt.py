@@ -15,7 +15,7 @@ def transcribe_whisper(audio_path):
     return result["text"]
 
 if __name__ == "__main__":
-    file_path = "/data/qwen/data/audio/input/socially_inept/jesse2.wav"
+    file_path = "/home/system/workspace/qwen/data/audio/input/HumphreyBogart/CaneMutinyStrawberries.wav"
     try:
         transcription = transcribe_whisper(file_path)
         print("\n--- Transcription ---\n")

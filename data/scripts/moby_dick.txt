@@ -1,14 +1,14 @@
 foo: CHAPTER 1
 foo: Better sleep with a sober cannibal than a drunken Christian.
-Ishmael: Call me Ishmael. Some years ago — never mind how long precisely —having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.
+Ishmael: ...Call me Ishmael. Some years ago — never mind how long precisely —having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world...
 Ishmael: Why did the old Persians hold the sea holy? Why did the Greeks give it a separate deity, and own brother of Jove? Surely all this is not without meaning. And still deeper the meaning of that story of Narcissus, who because he could not grasp the tormenting, mild image he saw in the fountain, plunged into it and was drowned. But that same image, we ourselves see in all rivers and oceans. It is the image of the ungraspable phantom of life; and this is the key to it all.
 
 foo: CHAPTER 36
 Starbuck: I came here to hunt whales, not my commander's vengeance.  
 Ahab: The path to my fixed purpose is laid with iron rails, whereon my soul is grooved to run.
-Starbuck: Vengeance on a dumb brute! To be enraged with a dumb thing, Captain Ahab, seems blasphemous!
+Starbuck: Vengeance on a dumb brute! To be enraged with a dumb thing! Captain Ahab, seems blasphemous!
 Ahab: Talk not to me of blasphemy, man; I’d strike the sun if it insulted me. 
-Ahab: ...All visible objects, man, are but as pasteboard masks... If man will strike, strike through the mask! How can the prisoner reach outside except by thrusting through the wall? To me, the white whale is that wall, shoved near to me.
+Ahab: ...All visible objects are but as pasteboard masks... If man will strike, strike through the mask! How can the prisoner reach outside except by thrusting through the wall? To me, the white whale is that wall, shoved near to me...
 
 foo: CHAPTER 41
 Ishmael:  Ahab's quenchless feud seemed mine. With greedy ears I learned the history of that murderous monster against whom I and all the others had taken our oaths of violence and revenge.
@@ -29,10 +29,10 @@ Ishmael: "There is a wisdom that is woe; but there is a woe that is madness."
 foo: CHAPTER 132 - The Symphony
 Ahab: Starbuck!!
 Starbuck: Sir!
-Ahab: Oh, Starbuck! it is a mild, mild wind, and a mild looking sky. On such a day—very much such a sweetness as this—I struck my first whale—a boy-harpooneer of eighteen! Forty—forty—forty years ago!—ago! 
+Ahab: Oh, Starbuck! it is a mild, mild wind, and a mild looking sky. On such a day—very much such a sweetness as this—I struck my first whale—a boy-harpooneer of eighteen! Forty years ago!
 Ahab: When I think of this life I have led; the desolation of solitude it has been; the masoned, walled-town of a Captain's exclusiveness, which admits but small entrance to any sympathy from the green country without—oh, weariness! heaviness!
 
 foo: CHAPTER 135 - The Chase - Third day
-Ahab: Towards thee I roll, thou all-destroying but unconquering whale; to the last I grapple with thee; from hell’s heart I stab at thee; for hate’s sake I spit my last breath at thee
+Ahab: Towards thee I roll, thou all-destroying but unconquering whale; to the last I grapple with thee; from hell’s heart I stab at thee; for hate’s sake I spit my last breath at thee!!
 
 pip: Thou touchest my inmost centre, boy; thou art tied to me by cords woven of my heart-strings
