@@ -41,6 +41,20 @@
       ],
       "ref_audio": "audio/input/MobyDick/moby_consider.wav",
       "ref_text": "Consider all this, and then turn to this green gentle and most docile earth. Consider them both the sea and the land, and do you not find a strange analogy to something in yourself? For as this appalling ocean surrounds the verdant land, so in the soul of man there lies one insular Tahiti full of peace and joy, but encompassed by all the horrors of the half-known life. God keep thee, push not off from that aisle. thou canst never return."
+      },
+      {
+      "id":"SirLaurenceOlivier",
+      "description":"Lawrence Olivier",
+      "seed": 100,
+      "temp": 0.9,
+      "language": "English",
+      "instruct":[
+        "A deep, gravelly, rhythmic Western drawl.",
+        "Slow, punctuated delivery.",
+        "A weary, authoritative grit."
+      ],
+      "ref_audio": "audio/input/LaurenceOlivier/othello.wav",
+      "ref_text": "Haply for I am black. And have not those soft parts of conversation that chamberers have. Or for I am declined into the veil of years. Yet that's not much. She's gone. I am abused... ...and my relief, must be to loathe her!"
       }
     ]
 }
